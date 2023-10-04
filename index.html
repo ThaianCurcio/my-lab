@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic Form</title>
+</head>
+<h1>Basic Form</h1>
+<body>
+
+    <p> <strong>Input your login information:</strong>
+        <form action="http://example.com/submit_form" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form></p>
+<P><strong>Select your gender:</strong></P>
+    <form>
+        <label>
+            <input type="radio" name="genero" value="masculino">
+            Masculino
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="genero" value="feminino">
+            Feminino
+        </label>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+<P><strong>Select the programming language you are an expert in:</strong></P>
+    <form>
+        <label>
+            <input type="checkbox" name="area" value="html">
+            html
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="area" value="JAVA">
+            JAVA
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="area" value="CSS">
+            CSS
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="area" value="JS">
+            JS
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="area" value="C++">
+            C++
+        </label>       
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+    <p><strong>Upload your Picture.</strong></p>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <label for="file">Select a picture:</label>
+        <input type="file" id="file" name="file" accept="image/*" required><br><br>
+        
+        <input type="submit" value="Upload">
+    </form>
+
+<p><strong>Please, select your date of birth.</strong>
+    </p>
+    <p><label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob">
+</p>
+
+<p><strong>Fill your E-mail contact and Github.</strong></p>
+
+<p><label for="email">Email:</label>
+<input type="email" id="email" name="email">
+</p>
+
+<p><label for="Github">Github:</label>
+<input type="url" id="Github" name="Github">
+</p>
+<p><strong>Fill your age.</strong></p>
+<p><label for="age">Age:</label>
+<input type="number" id="age" name="age" min="18" max="99" step="1">
+</p>
+
+<p><label for="satisfaction">Satisfaction Level:</label>
+<input type="range" id="satisfaction" name="satisfaction" min="0" max="10">
+</p>
+
+<p><label for="phone">Phone Number:</label>
+<input type="text" id="phone" name="phone" pattern="\(\d{3}\) \d{3}-\d{4}">
+</p>
+
+<p><label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Enter your email">
+</p>
+
+<p><strong>Insert your salary outlook (minimun and maximum)</strong></p>
+<form action="random_number.php" method="POST">
+    <label for="min">Minimum Amount (USD):</label>
+    <input type="number" id="min" name="min" step="0.01" required><br><br>
+
+    <label for="max">Maximum Amount (USD):</label>
+    <input type="number" id="max" name="max" step="0.01" required><br><br>
+
+    <input type="submit" value="Generate Random Number">
+</form>
+<input type="submit" value="click here to submit your basic form">
+
+   
+</body>
+</html>
